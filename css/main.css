@@ -318,6 +318,12 @@ a[href^="#"]:hover {
   color: blue;
 }
 
+.page-link {
+  font-size: 25px;
+  font-family: "Cabin", sans-serif;
+  text-decoration: none;
+}
+
 p {
   text-align: justify;
   text-justify: inter-word;
