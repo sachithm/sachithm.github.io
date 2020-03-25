@@ -288,7 +288,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Cabin", sans-serif;
+  font-family: "Lora", serif;
   font-size: 40px;
   line-height: 1.2em;
   font-weight: 600;
@@ -322,6 +322,21 @@ a[href^="#"]:hover {
   font-size: 25px;
   font-family: "Cabin", sans-serif;
   text-decoration: none;
+}
+
+.nav-link {
+  font-size: 25px;
+  font-family: "Cabin", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:visited {
+  color: white;
+}
+
+.page-link:hover {
+  color: red;
 }
 
 p {
