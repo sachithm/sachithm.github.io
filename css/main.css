@@ -280,11 +280,15 @@ body {
   display: block;
 }
 
+.title-section {
+  margin: 40vh 0 122px 0;
+}
+
 h1 {
   font-family: "Cabin", sans-serif;
   font-size: 80px;
   line-height: 1.2em;
-  margin: 40vh 0 122px 0;
+  margin: 0;
 }
 
 h2 {
@@ -293,6 +297,15 @@ h2 {
   line-height: 1.2em;
   font-weight: 600;
   margin: 70px 0 33px 0;
+}
+
+.subtitle {
+  font-family: "Cabin", sans-serif;
+  font-size: 40px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: gray;
+  margin: 10px 0 0 0;
 }
 
 .by {
