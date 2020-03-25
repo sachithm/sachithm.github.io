@@ -268,16 +268,16 @@ textarea {
   src: url("caslon.ttf") format("truetype");
 }
 
-body {
-  width: 777px;
-  max-width: 100vw;
-  margin: 0 auto 0 auto;
+* {
+  outline: none;
 }
 
 .container {
+  width: 700px;
   max-width: 90%;
   margin: 0 auto 0 auto;
   display: block;
+  padding-top: 13px;
 }
 
 .title-section {
@@ -337,15 +337,62 @@ a[href^="#"]:hover {
   text-decoration: none;
 }
 
+.page-link:hover {
+  background: #ececec;
+  transition: all 0.3s ease;
+}
+
+.dark .page-link:hover {
+  background: #424242;
+  transition: all 0.3s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-link {
   font-size: 25px;
   font-family: "Cabin", sans-serif;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .nav-link:visited {
-  color: white;
+  color: black;
+}
+
+button {
+  background: none;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #ececec;
+  transition: all 0.3s ease;
+}
+
+.dark {
+  background-color: #292929;
+  color: #d6d6d6;
+  transition: all 0.3s ease;
+}
+
+.dark-but {
+  color: #d6d6d6;
+  transition: all 0.3s ease;
+}
+
+.dark-but:hover {
+  background: #424242;
+}
+
+body {
+  transition: all 0.3s ease;
 }
 
 .page-link:hover {
