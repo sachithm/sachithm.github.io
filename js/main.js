@@ -5,16 +5,29 @@ for (i = 0; i < document.getElementsByClassName("page-link").length; i++) {
   document.getElementsByClassName("page-link")[i].style.color = random_color;
 }
 
-$("#dark").click(function() {
+var toggleSetting = localStorage.getItem("dark");
+
+if (toggleSetting == "true") {
+  darkify();
+};
+
+
+$("#dark").click(function(){
+  darkify();
+});
+
+function darkify() {
   $("body").toggleClass("dark");
   $("button").toggleClass("dark-but");
   $("a[href^='#']").toggleClass("bib-link");
   $("a[href^='#']").toggleClass("dark-bib");
 
-  // var is_dark = $("body").hasClass("dark"); //get the state of current element
-  // // var id = fav_program.data("id"); //get the ID from current element's data-id attribute
-  // setMyCookie(is_dark); //pass both to setMyCookie function
-});
+  if ($("body").hasClass("dark")) {
+    localStorage.setItem("dark", "true");
+    } else {
+      localStorage.setItem("dark", "false");
+    };
+};
 
 // function setMyCookie(is_dark) {
 //   if (is_dark) {
