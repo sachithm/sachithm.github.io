@@ -7,5 +7,21 @@ for (i = 0; i < document.getElementsByClassName("page-link").length; i++) {
 
 $("#dark").click(function() {
   $("body").toggleClass("dark");
-  $(".nav-link").toggleClass("dark-but");
-})
+  $("button").toggleClass("dark-but");
+  $("a[href^='#']").toggleClass("bib-link");
+  $("a[href^='#']").toggleClass("dark-bib");
+
+  // var is_dark = $("body").hasClass("dark"); //get the state of current element
+  // // var id = fav_program.data("id"); //get the ID from current element's data-id attribute
+  // setMyCookie(is_dark); //pass both to setMyCookie function
+});
+
+// function setMyCookie(is_dark) {
+//   if (is_dark) {
+//     // if element is active, store its ID
+//     $.cookie("fav_program_cookie", 1);
+//   } else {
+//     // otherwise remove cookie completely
+//     $.removeCookie("fav_program_cookie");
+//   }
+// };

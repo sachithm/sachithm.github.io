@@ -315,11 +315,23 @@ h2 {
   line-height: 1em;
 }
 
-a[href^="#"] {
+.dark-bib {
+  color: #ef0000;
+}
+
+.bib-link {
   color: red;
 }
 
-a[href^="#"]:visited {
+a {
+  text-decoration: none;
+}
+
+.dark-bib:visited {
+  color: #ef0000;
+}
+
+.bib-link:visited {
   color: red;
 }
 
@@ -327,8 +339,18 @@ a:visited {
   color: gray;
 }
 
-a[href^="#"]:hover {
+.dark-bib:hover {
+  color: #0000ef;
+  text-decoration: none;
+}
+
+.bib-link:hover {
   color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .page-link {
@@ -338,13 +360,7 @@ a[href^="#"]:hover {
 }
 
 .page-link:hover {
-  background: #ececec;
-  transition: all 0.3s ease;
-}
-
-.dark .page-link:hover {
-  background: #424242;
-  transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .nav {
@@ -366,14 +382,16 @@ a[href^="#"]:hover {
 button {
   background: none;
   border: none;
-  text-align: center;
+  text-align: left;
   display: inline-block;
   border-radius: 4px;
+  padding: 6px 10px;
+  margin: 0 -10px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #ececec;
-  transition: all 0.3s ease;
+  background: #f7f7f7;
 }
 
 .dark {
