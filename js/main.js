@@ -1,3 +1,4 @@
+// Randomises colours for index page list
 var i;
 for (i = 0; i < document.getElementsByClassName("page-link").length; i++) {
   var colors = ["#ff0000", "#00ff00", "#0000ff"];
@@ -5,17 +6,19 @@ for (i = 0; i < document.getElementsByClassName("page-link").length; i++) {
   document.getElementsByClassName("page-link")[i].style.color = random_color;
 }
 
+// Keeps dark mode on between pages
 var toggleSetting = localStorage.getItem("dark");
-
 if (toggleSetting == "true") {
   darkify();
-};
 
+}
 
-$("#dark").click(function(){
+// Listens for dark mode click
+$("#dark").click(function() {
   darkify();
 });
 
+// Function which toggles CSS between dark mode and light mode, and updates localStorage
 function darkify() {
   $("body").toggleClass("dark");
   $("button").toggleClass("dark-but");
@@ -24,17 +27,7 @@ function darkify() {
 
   if ($("body").hasClass("dark")) {
     localStorage.setItem("dark", "true");
-    } else {
-      localStorage.setItem("dark", "false");
-    };
-};
-
-// function setMyCookie(is_dark) {
-//   if (is_dark) {
-//     // if element is active, store its ID
-//     $.cookie("fav_program_cookie", 1);
-//   } else {
-//     // otherwise remove cookie completely
-//     $.removeCookie("fav_program_cookie");
-//   }
-// };
+  } else {
+    localStorage.setItem("dark", "false");
+  }
+}

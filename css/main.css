@@ -388,6 +388,7 @@ button {
   padding: 6px 10px;
   margin: 0 -10px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 button:hover {
@@ -406,7 +407,7 @@ button:hover {
 }
 
 .dark-but:hover {
-  background: #424242;
+  background: #353535;
 }
 
 body {
