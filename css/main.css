@@ -445,3 +445,16 @@ li {
   padding-left: 1.9em;
   text-indent: -1.9em;
 }
+
+.uvin-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uvin-imgs > img {
+  width: 100%;
+  margin: 10px 0;
+}
+
