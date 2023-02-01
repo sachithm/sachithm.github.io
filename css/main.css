@@ -446,7 +446,7 @@ li {
   text-indent: -1.9em;
 }
 
-.uvin-imgs {
+.uvin-imgs, .sonal-imgs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -454,6 +454,11 @@ li {
 }
 
 .uvin-imgs > img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.sonal-imgs > img {
   width: 100%;
   margin: 10px 0;
 }
